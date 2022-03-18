@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*::after ,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font:14px/1.5 Arial;
+    color: #333;
+    display:-ms-grid;
+    display: grid;
+    grid: auto auto /1fr 800px 1fr;
+}
+
+header {
+    padding:20px 0px;
+    grid-area: 2/1/1/4;
+    text-align: center;
+    background: #444;
+}
+
+
+
+main {
+    grid-area: 3/2/2/3;
+    background: red;
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+header > h1 {
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+header > p {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
