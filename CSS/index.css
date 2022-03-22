@@ -10,7 +10,6 @@ body {
     margin: 0;
     font:14px/1.5 Arial;
     color: #333;
-    display:-ms-grid;
     display: grid;
     grid: auto auto /1fr 800px 1fr;
 }
@@ -25,8 +24,12 @@ header {
 
 
 main {
-    grid-area: 3/2/2/3;
-    background: red;
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid: auto /200px 600px;
+    
+
+
 }
 
 .avatar {
@@ -46,4 +49,48 @@ header > p {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 0px;
+}
+
+.column-1{
+    grid-area: 1/1/2/2;
+    
+}
+.column-2{
+    grid-area: 1/2/2/3;
+}
+
+.column-1 section {
+    display: grid;
+    grid: auto auto/60px auto;
+    align-items: center;
+}
+
+
+main section > span.iconfont {
+    grid-area: 1/1/2/2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #77a8a3;
+    color: #fff;
+    border-radius: 50%;
+    
+}
+main section > h2 {
+    grid-area: 1/2/2/3;
+    font-size: 18px;
+    display: flex;
+}
+main section > h2::after {
+    content: '';
+    flex:1;
+    align-items: center;
+    background-color: #77a8a3;
+    height: 2px;
+
+}
+li {
+    list-style: none;
 }
