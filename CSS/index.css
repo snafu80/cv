@@ -103,7 +103,7 @@ main section > ul {
     margin: 0;
     padding-left: 0;
 }
-.detail li {
+.detail > li {
     display: grid;
     grid: auto auto/auto 1fr auto;
     align-items: center;
